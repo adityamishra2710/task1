@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#border{
+    
+    position: absolute;
+    width: 95%;
+    height:85%;
+    border:20px solid black;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 1;
+    top: 5%;
+    left: 3%;
+    border-radius: 10px;
+
+}
+#inner-main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#color{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    
+}
+#inner-main #shape{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    clip-path: polygon(100% 0, 100% 75%, 51% 51%, 0 78%, 0 0);
+
+}
+#shape h1{
+    z-index: -1;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:700px;
+    color: white;
+    position: absolute;
+    left: 45% ;
+    top: 5%;
+    transform: translate(-35%,-5%);    
+    /* transform: translate(-50%,-50%); */
+
+}
+#color img{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-45%,-5%);
+    width: 90vh;
+    height: 50vh;
+}
+#color #nav{
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    transform: translate(-75%,-65%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:95px;
+}
+#nav h5{
+    /* font: 50px; */
+    font-size: 40px;
+}
+#nav h3{
+    font-size: 100px;
+   text-transform: uppercase;
+
+}
+button{
+    background-color: transparent;
+    box-shadow: 1px 1px 1px grey;
+   padding: 10px;
+    border-radius:25px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+#menu{
+    /* padding: 10px,30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 20px;
+    /* background-color:black; */
+    width: 90%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    
+}
+#shape1{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+
+}
+#but{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+#color #icon{
+    position: absolute;
+    top: 83%;
+    left: 53%;
+    transform: translate(-85%,-55%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
